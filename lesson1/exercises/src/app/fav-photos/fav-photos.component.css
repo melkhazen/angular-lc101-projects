@@ -3,9 +3,18 @@ h3 {
 }
 
 img {
-
+   width: 100px;
+   height: 100px;
 }
 
 .photos {
    text-align: center;
+   content:'';
+   display: block; 
+}
+ul{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
 }
