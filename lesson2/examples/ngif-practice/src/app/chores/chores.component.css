@@ -16,3 +16,12 @@ img {
     display: block;
     margin: auto;
 }
+
+.workHarder{
+    color: blueviolet;
+    text-align: center;
+}
+
+.requirments {
+color: green;
+}
