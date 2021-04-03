@@ -4,6 +4,13 @@
        <li *ngFor ="let movie of movies">{{movie}}</li>
     </ol>
     <hr>
+<<<<<<< HEAD
     <input #newMovie (keyup.enter)="message = addMovie(newMovie.value); newMovie.value = ''" type="text" placeholder="Enter Movie Title Here"/>   
     <button (click)="message = addMovie(newMovie.value); newMovie.value = ''">Add</button>    
    <p class = "error" *ngIf = "message">{{message}}</p>
+=======
+    <input #newMovie (keyup.enter) = "addMovie(newMovie.value); newMovie.value = ''" type='text' placeholder="Enter Movie Title Here"/>
+    <button *ngIf = "newMovie.value === '' || Movies.includes(newMovie.value)" (click)="addMovie(newMovie.value); newMovie.value = ''">Add</button>
+ </div>
+ <p #message >Do not submit an empty string</p>
+>>>>>>> f98525e9e27fb3f0a0b5449a6b7f8d58cfb2ceb9
