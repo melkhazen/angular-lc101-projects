@@ -21,7 +21,8 @@
 }
 
 img {
-    position: absolute;
+    position: inherit;
+
 }
 
 .container-right {
